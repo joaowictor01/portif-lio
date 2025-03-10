@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qontum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+<body>
+    
+    <canvas id="particlesCanvas"></canvas>
+
+    <header class="cabecalho">
+
+        <nav class="navegacao">
+            <ul>
+                <li id="in">Início</li>
+                <li id="pr">Projetos</li>
+                <li id="so">Sobre</li>
+                <li id="co">Contato</li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main class="main" id="main">
+
+        <section class="inicio" id="inicio">
+            <img src="/img/7fc04149-5eb4-4c05-8415-24aea8e10d59.webp" alt="Quantum sites" class="foto">
+            <h1 class="h1-title"><span>Qontum</span> Services</h1>
+            <h3 class="caract">Front-End Web Development</h3>
+        </section>
+        <!-- fim inicio -->
+
+        <section class="sobre" id="sobre">
+            <h2 class="h2-title">Sobre Nós</h2>
+
+            <div class="sobre-box">
+                <p class="sobre-parag">Na QONTUM, somos apaixonados por transformar ideias em experiências digitais únicas. Especializados em
+                desenvolvimento Front-End, nossa missão é criar interfaces de usuário dinâmicas, responsivas e visualmente
+                impressionantes que encantam os usuários e oferecem uma navegação intuitiva.</p>
+            </div>
+        </section>
+        <!-- fim sobre -->
+
+        <section class="projetos" id="projetos">
+            <h2 class="h2-title">Alguns Projetos</h2>
+            <div class="projetos-box">
+                <div class="projetos-box-item">
+                    <a href="https://jbdrones.netlify.app/">
+                        <img src="/img/jbdrones.jpg" alt="JB Drones" class="projetos-image">
+                        <h3 class="title-projetos">JB Drones</h3>
+                        <p class="paragrafo-projetos">Apresenta informações sobre a empresa, seus serviços/produtos, missão, visão e valores.</p>
+                    </a>
+                </div>
+                <div class="projetos-box-item">
+                    <a href="https://password-generate3.netlify.app/">
+                        <img src="/img/gerador.jpg" alt="Gerador de Senha" class="projetos-image">
+                        <h3 class="title-projetos">Gerador de senhas</h3>
+                        <p class="paragrafo-projetos">Ferramenta que cria senhas aleatórias e seguras, geralmente com uma combinação de letras, números e
+                        caracteres especiais.</p>
+                    </a>
+                </div>
+                <div class="projetos-box-item">
+                    <a href="https://academiaexe.netlify.app/">
+                        <img src="/img/academia1.jpg" alt="Academias" class="projetos-image">
+                        <h3 class="title-projetos">Academias</h3>
+                        <p class="paragrafo-projetos">Site de rolagem única que concentra todas as informações em uma única página.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- fim projetos -->
+
+        <section class="contato" id="contato">
+
+            <h2 class="h2-title">Entre em Contato</h2>
+
+            <div class="redes">
+                <ul class="red_sociais">
+                    <a href="https://www.instagram.com/joaowictor01/" target="_blank">
+                        <li style="--cor1: #FB3997; --cor2: #FECF12;">
+                            <span class="icon">
+                                <i class="bi bi-instagram"></i>
+                            </span>
+                            <span class="text"> Instagram</span>
+                        </li>
+                    </a>
+                    <a
+                        href="https://w.app/qontumservices" target="_blank">
+                        <li style="--cor1: #43FE84; --cor2: #2DBC5D;">
+                            <span class="icon">
+                                <i class="bi bi-whatsapp"></i>
+                            </span>
+                            <span class="text"> WhatsApp</span>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="contato-box">
+                <form action="https://formspree.io/f/mrbpgelq" method="post" class="formulario-contato">
+                    <input type="text" name="nome" id="nome" placeholder="Nome">
+                    <textarea name="msg" id="msg" placeholder="Digite Sua Mensagem"></textarea>
+                    <button type="submit" class="botao-form">Enviar Mensagem</button>
+                </form>
+
+        </section>
+    </main>
+
+<script src="/scripts.js"></script>
+</body>
+</html>

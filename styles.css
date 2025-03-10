@@ -1,0 +1,358 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    
+    transition: all .2s linear;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    /*o que fica abaixo da barra*/
+    background:  var(--cor-sexta);
+}
+
+html::-webkit-scrollbar-thumb {
+    /*cor da barra*/
+    background: var(--cor-hover);
+}
+
+body {
+    background:var(--cor-sexta);
+}
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+    background: black;
+    border-bottom: 2px solid #82daec;
+}
+.cabecalho .navegacao li {
+    display: inline-block;
+    padding: 1.5rem 4rem;
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cabecalho .navegacao li:hover{
+    background: var(--cor-secundaria);
+    transform: scale(1.1);
+}
+:root{
+    --cor-primaria: #9c1c94;
+    --cor-secundaria: #82daec;
+    --cor-terciaria: #795b88;
+    --cor-hover: #82daec;
+    --cor-quarta: #baa5d4;
+    --cor-quinta: #36d5f4;
+    --cor-sexta:#2e2035;
+}
+
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.foto  {
+    width: 450px;
+    height: 450px;
+    box-shadow: 0 0 20px var(--cor-quinta);
+    border-radius: 20px;
+    
+}
+.h1-title{
+    font-size: 5rem;
+    color: var(--cor-primaria);
+    margin: 20px;
+    font-weight: bold;
+    
+}
+.h1-title span{
+    color: var(--cor-quinta);
+    text-transform: uppercase;
+}
+.caract{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sobre{
+    padding: 6rem 2rem;
+}
+
+.h2-title{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.sobre-box{
+    padding: 2rem;
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 16px;
+    border: 2px solid var(--cor-quarta);
+    backdrop-filter: blur(20px);
+    background: var(--cor-hover)
+    
+}
+
+.sobre-parag{
+    text-align: justify;
+    font-size: 1.7rem;
+}
+
+.projetos{
+    padding: 6rem 2rem;
+}
+.projetos-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 30px auto;
+
+}
+
+.projetos-box-item{
+    background: var(--cor-hover);
+    border: 1px solid var(--cor-quarta);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.projetos-box-item:hover{
+    box-shadow: 0 10px 20px var(--cor-quinta);
+    transform: translateY(-10px) scale(1.05);
+}
+
+.projetos-image{
+    height: 200px;
+    width:100%;
+    object-fit: cover;
+    
+}
+
+.title-projetos{
+    font-size: 2rem;
+    color: black;
+    padding: 1rem;
+}
+
+.paragrafo-projetos{
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    color: rgb(29, 29, 29);
+    line-height: 1.25;
+}
+
+
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem;
+}
+
+
+
+.red_sociais {
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.red_sociais li {
+    width: 80px;
+    height: 80px;
+
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #00000055;
+    border-radius: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    transition: .2s;
+
+}
+
+.red_sociais li:hover {
+    width: 180px;
+}
+
+.red_sociais li span {
+    position: absolute;
+
+}
+
+.red_sociais li .icon {
+    color: #ccc;
+    font-size: 2.2em;
+
+    transition: .2s;
+}
+
+.red_sociais li .text {
+    color: #ffffff;
+    font-size: 20px;
+    transform: scale(0);
+    transition: .2s;
+    transition-delay: .1s;
+}
+
+.red_sociais li:hover .text {
+
+    transform: scale(1);
+}
+
+.red_sociais li:hover .icon {
+    transform: scale(0);
+
+}
+
+.red_sociais li::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 60px;
+
+}
+
+.red_sociais li:hover::before {
+    opacity: 1;
+}
+
+.contato-box{
+    width: 100%;
+    
+}
+.formulario-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--cor-hover);
+    border: 1px solid var(--cor-quarta);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    max-width: 600px;
+    min-width: none;
+    padding: 2rem;
+    margin: 30px auto;
+}
+
+#nome{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+    
+}
+#nome:focus{
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 20px var(--cor-primaria);
+}
+#msg{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#msg:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 20px var(--cor-primaria);
+}
+
+.botao-form{
+    background: var(--cor-sexta);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.botao-form:hover{
+    background: var(--cor-primaria);
+    box-shadow: 0 0 20px var(--cor-primaria);
+    transform: translateY(-4px);
+}
+
+canvas {
+    position: fixed;
+    z-index: -1;
+}
+
+.foto, .projetos-box-item,.cabecalho,.sobre-box,.formulario-contato{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalho .navegacao li {
+        padding: 1.5rem 2rem;
+    }
+    .cabecalho .navegacao li:hover{
+        background: var(--cor-secundaria);
+        transform: scale(1.1);
+    }
+    .foto  {
+        width: 300px;
+        height: 300px;
+    }
+    .h1-title{
+        font-size: 3rem;
+    }
+    .caract{
+        font-size: 1.5rem;
+    }
+    .sobre-box{
+        padding: 1rem;
+    }
+    .sobre-parag{
+        font-size: 1.5rem;
+    }
+    .projetos-box{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .projetos-box-item{
+        margin: 10px;
+    
+}}
