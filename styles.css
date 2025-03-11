@@ -366,5 +366,10 @@ canvas {
     }
     .projetos-box-item{
         margin: 10px;
-    
-}}
+    }
+    .icones{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 2rem;
+    }
+}
